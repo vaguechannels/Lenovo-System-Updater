@@ -34,7 +34,7 @@
 *   Active Directory 
     *   User Database
 
-## **INTERGRATE MARIMBA & LENOVO
+## **INTERGRATE MARIMBA & LENOVO**
 *   Package/Deploy Model/Architecture Specific Content Packages.
 *   Deploy Marimba Lenovo Thin Installer Service Channel.
 *   Thin Installer Service Channel handles updates.
