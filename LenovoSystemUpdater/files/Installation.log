@@ -1,0 +1,12 @@
+MTM: 20FCS4WJ00
+OS: Windows 7
+OSLang: EN
+
+Package ID : Package Description : Date : Installation status
+
+connect24213973ww : Connect2 - 7/8/8.1/10 [32,64] : 03/12/2017 : Success
+n1cd531w : Intel HD Graphics Driver - 7 [32] : 03/12/2017 : Success
+n1fca09w_sun : Integrated Camera Driver for SunplusIT - 7 [32,64]/8.1[64] : 03/12/2017 : Success
+n1qvu66w_win7 : ThinkPad Hotkey Features Integration Package Setup - 7 [32,64] : 03/12/2017 : Success
+n1au410w : ThinkPad Power Manager - Vista/7 [32,64] : 03/12/2017 : Success
+n1crg38w : Intel Management Engine 11.0 Firmware - 7 [32,64]/8.1/10 [64] : 03/12/2017 : Failed

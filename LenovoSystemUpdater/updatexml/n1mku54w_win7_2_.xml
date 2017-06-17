@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?pcdDescriptor version="0230"?>
+<Package name="PMD_WIN7" id="n1mku54w_win7" version="1.67.12.19" hide="False">
+  <Title default="EN">
+    <Desc id="EN">Lenovo Power Management Driver - 7 [32,64]</Desc>
+  </Title>
+  <DetectVersion type="Inf">
+    <_PnPID><![CDATA[ACPI\VEN_IBM&DEV_0055]]></_PnPID>
+    <_PnPID><![CDATA[ACPI\VEN_IBM&DEV_0068]]></_PnPID>
+    <_PnPID><![CDATA[ACPI\VEN_LEN&DEV_0068]]></_PnPID>
+    <_PnPID><![CDATA[ACPI\VEN_LEN&DEV_0168]]></_PnPID>
+    <_PnPID><![CDATA[ACPI\VEN_LEN&DEV_0268]]></_PnPID>
+    <_PnPID><![CDATA[ACPI\LEN0068]]></_PnPID>
+    <_PnPID><![CDATA[ACPI\LEN0168]]></_PnPID>
+    <_PnPID><![CDATA[ACPI\LEN0268]]></_PnPID>
+    <_PnPID><![CDATA[ACPI\IBM0055]]></_PnPID>
+    <_PnPID><![CDATA[ACPI\IBM0068]]></_PnPID>
+  </DetectVersion>
+  <Summary default="EN" />
+  <Severity type="1" />
+  <SeverityOverride type="2">
+    <Not>
+      <_Driver>
+        <HardwareID><![CDATA[ACPI\VEN_IBM&DEV_0055]]></HardwareID>
+        <HardwareID><![CDATA[ACPI\VEN_IBM&DEV_0068]]></HardwareID>
+        <HardwareID><![CDATA[ACPI\VEN_LEN&DEV_0068]]></HardwareID>
+        <HardwareID><![CDATA[ACPI\VEN_LEN&DEV_0168]]></HardwareID>
+        <HardwareID><![CDATA[ACPI\VEN_LEN&DEV_0268]]></HardwareID>
+        <HardwareID><![CDATA[ACPI\IBM0055]]></HardwareID>
+        <HardwareID><![CDATA[ACPI\IBM0068]]></HardwareID>
+        <HardwareID><![CDATA[ACPI\LEN0068]]></HardwareID>
+        <HardwareID><![CDATA[ACPI\LEN0168]]></HardwareID>
+        <HardwareID><![CDATA[ACPI\LEN0268]]></HardwareID>
+        <Version>0.1^</Version>
+      </_Driver>
+    </Not>
+  </SeverityOverride>
+  <Vendor>Lenovo</Vendor>
+  <ExtractCommand>n1mku54w.exe /VERYSILENT /DIR=%PACKAGEPATH% /EXTRACT="YES"</ExtractCommand>
+  <ReleaseDate>2016-12-27</ReleaseDate>
+  <DiskSpaceNeeded>1870128</DiskSpaceNeeded>
+  <Reboot type="3" />
+  <PackageType type="2" />
+  <Install rc="0" type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\setup.exe -S</Cmdline>
+  </Install>
+  <ManualInstall type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\setup.exe</Cmdline>
+  </ManualInstall>
+  <Uninstall />
+  <DetectInstall>
+    <_Driver>
+      <HardwareID><![CDATA[ACPI\VEN_IBM&DEV_0055]]></HardwareID>
+      <HardwareID><![CDATA[ACPI\VEN_IBM&DEV_0068]]></HardwareID>
+      <HardwareID><![CDATA[ACPI\VEN_LEN&DEV_0068]]></HardwareID>
+      <HardwareID><![CDATA[ACPI\VEN_LEN&DEV_0168]]></HardwareID>
+      <HardwareID><![CDATA[ACPI\VEN_LEN&DEV_0268]]></HardwareID>
+      <HardwareID><![CDATA[ACPI\IBM0055]]></HardwareID>
+      <HardwareID><![CDATA[ACPI\IBM0068]]></HardwareID>
+      <HardwareID><![CDATA[ACPI\LEN0068]]></HardwareID>
+      <HardwareID><![CDATA[ACPI\LEN0168]]></HardwareID>
+      <HardwareID><![CDATA[ACPI\LEN0268]]></HardwareID>
+      <Date>2016-10-28</Date>
+      <Version>1.67.12.19^</Version>
+    </_Driver>
+  </DetectInstall>
+  <Dependencies>
+    <And>
+      <_OS>
+        <OS>WIN7-ENT.*</OS>
+        <OS>WIN7-HOMEBASIC.*</OS>
+        <OS>WIN7-HOMEPREM.*</OS>
+        <OS>WIN7-PRO.*</OS>
+        <OS>WIN7-STARTER.*</OS>
+        <OS>WIN7-ULT.*</OS>
+      </_OS>
+      <Or>
+        <_PnPID><![CDATA[*IBM0055]]></_PnPID>
+        <_PnPID><![CDATA[*IBM0068]]></_PnPID>
+        <_PnPID><![CDATA[*LEN0068]]></_PnPID>
+        <_PnPID><![CDATA[*LEN0168]]></_PnPID>
+        <_PnPID><![CDATA[*LEN0268]]></_PnPID>
+      </Or>
+      <_Bios>
+        <Level>*</Level>
+        <Level>R06ET*</Level>
+        <Level>R05ET*</Level>
+        <Level>N1CET*</Level>
+        <Level>R07ET*</Level>
+        <Level>R08ET*</Level>
+        <Level>N1FET*</Level>
+        <Level>N1GET*</Level>
+        <Level>J4ET*</Level>
+        <Level>N1EET*</Level>
+        <Level>JDET*</Level>
+        <Level>JEET*</Level>
+        <Level>JBET*</Level>
+        <Level>N15ET*</Level>
+        <Level>JHET*</Level>
+        <Level>GQET*</Level>
+        <Level>B0ET*</Level>
+        <Level>N19ET*</Level>
+        <Level>GJET*</Level>
+        <Level>GMET*</Level>
+        <Level>N11ET*</Level>
+        <Level>GNET*</Level>
+        <Level>N14ET*</Level>
+        <Level>GRET*</Level>
+        <Level>G6ET*</Level>
+        <Level>G8ET*</Level>
+        <Level>G9ET*</Level>
+        <Level>GIET*</Level>
+        <Level>JGET*</Level>
+        <Level>JFET*</Level>
+        <Level>N1KET*</Level>
+        <Level>N1DET*</Level>
+        <Level>GLET*</Level>
+        <Level>GSET*</Level>
+        <Level>N10ET*</Level>
+        <Level>N1HET*</Level>
+        <Level>R02ET*</Level>
+        <Level>N1QET*</Level>
+        <Level>R0FET*</Level>
+        <Level>R0GET*</Level>
+        <Level>R0IET*</Level>
+        <Level>N1MET*</Level>
+        <Level>N1VET*</Level>
+      </_Bios>
+      <Or>
+        <Or>
+          <Not>
+            <_Bios>
+              <Level>GDET*</Level>
+            </_Bios>
+          </Not>
+        </Or>
+        <Or>
+          <And>
+            <_Bios>
+              <Level>GDET*</Level>
+            </_Bios>
+            <Or>
+              <_Coreq name="BIOS_GDUJ">
+                <Version>1.07.1.07^</Version>
+              </_Coreq>
+              <Not>
+                <_Bios>
+                  <Level>GDET0*</Level>
+                  <Level>GDET1*</Level>
+                  <Level>GDET2*</Level>
+                  <Level>GDET30*</Level>
+                  <Level>GDET31*</Level>
+                  <Level>GDET32*</Level>
+                  <Level>GDET33*</Level>
+                  <Level>GDET34*</Level>
+                  <Level>GDET35*</Level>
+                  <Level>GDET36*</Level>
+                </_Bios>
+              </Not>
+            </Or>
+          </And>
+        </Or>
+      </Or>
+    </And>
+  </Dependencies>
+  <Files>
+    <Installer>
+      <File>
+        <Name>n1mku54w.exe</Name>
+        <CRC>60EF10815BFE3A983D1860EDC73D56B05F0328BF</CRC>
+        <Size>1870128</Size>
+      </File>
+    </Installer>
+    <Readme default="EN">
+      <File id="EN">
+        <Name>n1mku54w.txt</Name>
+        <CRC>3E81E9EBE303EAC550BFF2B97F9613254B96774A</CRC>
+        <Size>46625</Size>
+      </File>
+    </Readme>
+  </Files>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+          <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>mk1pRUn/x3kt6hK5KsubfIlfa/g=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>ex8qjqgVfuFpKInbFJZc0r9byzyW5Ie6tHmg+bQd7ww7pH0hnIc8VBpAwgrNRZgQ/pR1RENRyp4HZZ15qLJQQA18tMQWH/kuo7oz7uXGz5c2INVA7rU6tJDUTLYArwpu6K6E1WKWva/mqy9fGYNbXOR1QD9mduBomVlDjucTIcfi14e9CFGGDDoYWRdUxkCcPnbYrv4taG+K8ubFXo05u3fpxdWbWP48jxsc2wsi6WlC1E0iEKP5iEhYsuIfzRJ/aaVlSc71SGPY4oDvnJeaEqeL+wRGtonplmFJSgr0wetJzQdcSjQiURxe5/nXhXC+Da6ydICWe2fBJ+phJE83Cw==</SignatureValue>
+    <KeyInfo>
+      <X509Data>
+        <X509Certificate>MIIE9jCCA96gAwIBAgIQVxYYDbfUmJ3EoXCD3Pp1ZzANBgkqhkiG9w0BAQsFADB/MQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAdBgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxMDAuBgNVBAMTJ1N5bWFudGVjIENsYXNzIDMgU0hBMjU2IENvZGUgU2lnbmluZyBDQTAeFw0xNTAxMTMwMDAwMDBaFw0xODAxMTIyMzU5NTlaMF4xCzAJBgNVBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBxMLTW9ycmlzdmlsbGUxDzANBgNVBAoUBkxFTk9WTzEPMA0GA1UEAxQGTEVOT1ZPMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtwVWMufFrSa68v9h+qMIEPTNZrZcxPzdiOoDfdTuX4A51yhSpbcySu9MbeXsu4Zg8f29nQMYnYsxSVfAUpaed3Sjjnff2k6/WHpSfoGzf5oDWrzY3Nss64VrE2/C3FZ0XVlp/xRAOO51MyRQ14Pz0KVOggw4LXgjQ8Tyy379Fi9CiDdBLmSFBt2rDoGVPfiiu0XPg6H6r/jw4U3sQ2iw1eyFWXa+tKqHm4uJKvWzWZWd5Wsls4iWx5RhHgT7+O3fLRc1FPf8oXl5QdVer/1UHGHN4wRbEJDDJWKhCUCbpzLxCkd1FIxMPQgojbiz9TkBBLi35zYzhHeRABHm1DX/BQIDAQABo4IBjTCCAYkwCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCB4AwKwYDVR0fBCQwIjAgoB6gHIYaaHR0cDovL3N2LnN5bWNiLmNvbS9zdi5jcmwwZgYDVR0gBF8wXTBbBgtghkgBhvhFAQcXAzBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTATBgNVHSUEDDAKBggrBgEFBQcDAzBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9zdi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9zdi5zeW1jYi5jb20vc3YuY3J0MB8GA1UdIwQYMBaAFJY7U/B5M5evfYPvLivMyreGHnJmMB0GA1UdDgQWBBRSMmHtmvK1hUveuxeoJ/Jwj5J18jARBglghkgBhvhCAQEEBAMCBBAwFgYKKwYBBAGCNwIBGwQIMAYBAQABAf8wDQYJKoZIhvcNAQELBQADggEBAHW49q6GgSXkLVnqgvw2Zpsz7mqr3TOb9OXM4KOnGQWUpfYnT/HaJbHOpH46LlgOwBd9hVyOI5ON6S0JSe6gcp49NZ2aoYvyIqq+k6xsr0QxVqHzPD0gOotwWBXKhg0+CMyxIuKYAjXNxvnzBqeAmyRbZoGvFdPeqbGpm+kvS+MeMTdy8gmXMZCj9f2KhDNjm2gYjKAVEeyodrs/LqrYsAMB4+ie099pA5++gBM892Z4DEREh14Y1Ydv/sLsAtOrkNeGlRgnoTklzFVqaHHm55T/c6VzHjKabNHb/t8Wt3psevQUnN4KqxyHrk1oQp8V3wzJNNum4tA4+Dc5w9uUgRc=</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</Package>

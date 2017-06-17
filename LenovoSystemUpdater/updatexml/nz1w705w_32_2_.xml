@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?pcdDescriptor version="0230"?>
+<Package name="IWLAN_NZ1W7_32" id="nz1w705w_32" version="19.10.2.1" hide="False">
+  <Title default="EN">
+    <Desc id="EN">Intel Wireless LAN Driver - 7 [32]</Desc>
+  </Title>
+  <DetectVersion type="Inf">
+    <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_00108086]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_10108086]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_01308086]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_01328086]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_11308086]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_11328086]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_08108086]]></_PnPID>
+    <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_09308086]]></_PnPID>
+  </DetectVersion>
+  <Summary default="EN" />
+  <Severity type="1" />
+  <SeverityOverride type="2">
+    <Not>
+      <_Driver>
+        <HardwareID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_00108086 PCI\VEN_8086&DEV_24F3&SUBSYS_10108086 PCI\VEN_8086&DEV_24F3&SUBSYS_01308086 PCI\VEN_8086&DEV_24F3&SUBSYS_01328086 PCI\VEN_8086&DEV_24F3&SUBSYS_11308086 PCI\VEN_8086&DEV_24F3&SUBSYS_11328086 PCI\VEN_8086&DEV_24F3&SUBSYS_08108086 PCI\VEN_8086&DEV_24F3&SUBSYS_09308086]]></HardwareID>
+        <Version>0.1^</Version>
+      </_Driver>
+    </Not>
+  </SeverityOverride>
+  <Vendor>Lenovo</Vendor>
+  <ExtractCommand>nz1w705w_32.exe /VERYSILENT /DIR=%PACKAGEPATH% /EXTRACT="YES"</ExtractCommand>
+  <ReleaseDate>2016-12-14</ReleaseDate>
+  <DiskSpaceNeeded>221468957</DiskSpaceNeeded>
+  <Reboot type="3" />
+  <PackageType type="2" />
+  <Install rc="0,3010" type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\Install\Setup.exe -S</Cmdline>
+  </Install>
+  <ManualInstall type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\Install\Setup.exe</Cmdline>
+  </ManualInstall>
+  <Uninstall />
+  <DetectInstall>
+    <_Driver>
+      <HardwareID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_00108086 PCI\VEN_8086&DEV_24F3&SUBSYS_10108086 PCI\VEN_8086&DEV_24F3&SUBSYS_01308086 PCI\VEN_8086&DEV_24F3&SUBSYS_01328086 PCI\VEN_8086&DEV_24F3&SUBSYS_11308086 PCI\VEN_8086&DEV_24F3&SUBSYS_11328086 PCI\VEN_8086&DEV_24F3&SUBSYS_08108086 PCI\VEN_8086&DEV_24F3&SUBSYS_09308086]]></HardwareID>
+      <Date>2016-10-10</Date>
+      <Version>19.10.2.1^</Version>
+    </_Driver>
+  </DetectInstall>
+  <Dependencies>
+    <And>
+      <_OS>
+        <OS>WIN7-ENT.*</OS>
+        <OS>WIN7-HOMEBASIC.*</OS>
+        <OS>WIN7-HOMEPREM.*</OS>
+        <OS>WIN7-PRO.*</OS>
+        <OS>WIN7-STARTER.*</OS>
+        <OS>WIN7-ULT.*</OS>
+      </_OS>
+      <Or>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_00108086]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_10108086]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_01308086]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_01328086]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_11308086]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_11328086]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_08108086]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_24F3&SUBSYS_09308086]]></_PnPID>
+      </Or>
+      <_Bios>
+        <Level>*</Level>
+        <Level>N1HET*</Level>
+        <Level>N1EET*</Level>
+        <Level>N1KET*</Level>
+        <Level>N1DET*</Level>
+        <Level>R06ET*</Level>
+        <Level>N1CET*</Level>
+        <Level>N1FET*</Level>
+        <Level>R02ET*</Level>
+        <Level>N1GET*</Level>
+      </_Bios>
+      <_CPUAddressWidth>
+        <AddressWidth>32</AddressWidth>
+      </_CPUAddressWidth>
+    </And>
+  </Dependencies>
+  <Files>
+    <Installer>
+      <File>
+        <Name>nz1w705w_32.exe</Name>
+        <CRC>37EE8B4438FA260BFAB754A283F489533FBF71BE</CRC>
+        <Size>83646744</Size>
+      </File>
+    </Installer>
+    <Readme default="EN">
+      <File id="EN">
+        <Name>nz1w705w.txt</Name>
+        <CRC>DBF14F512F930B783DBA12A154183428B7AE0395</CRC>
+        <Size>10866</Size>
+      </File>
+    </Readme>
+  </Files>
+</Package>

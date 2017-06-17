@@ -1,0 +1,226 @@
+
+-n1cd531w
+   -DetectInstall(False), 
+      -_Driver(True), 
+         -HardwareID(NE), PCI\VEN_8086&DEV_1906&SUBSYS_223117AA PCI\VEN_8086&DEV_1906&SUBSYS_223317AA PCI\VEN_8086&DEV_1906&SUBSYS_223517AA PCI\VEN_8086&DEV_1906&SUBSYS_223717AA PCI\VEN_8086&DEV_1906&SUBSYS_223817AA PCI\VEN_8086&DEV_1913&SUBSYS_223117AA PCI\VEN_8086&DEV_1913&SUBSYS_223317AA PCI\VEN_8086&DEV_1913&SUBSYS_223517AA PCI\VEN_8086&DEV_1913&SUBSYS_223717AA PCI\VEN_8086&DEV_1913&SUBSYS_223817AA PCI\VEN_8086&DEV_1916&SUBSYS_223117AA PCI\VEN_8086&DEV_1916&SUBSYS_223317AA PCI\VEN_8086&DEV_1916&SUBSYS_223517AA PCI\VEN_8086&DEV_1916&SUBSYS_223717AA PCI\VEN_8086&DEV_1916&SUBSYS_223817AA PCI\VEN_8086&DEV_190E&SUBSYS_223117AA PCI\VEN_8086&DEV_190E&SUBSYS_223317AA PCI\VEN_8086&DEV_190E&SUBSYS_223517AA PCI\VEN_8086&DEV_190E&SUBSYS_223717AA PCI\VEN_8086&DEV_190E&SUBSYS_223817AA PCI\VEN_8086&DEV_191E&SUBSYS_223117AA PCI\VEN_8086&DEV_191E&SUBSYS_223317AA PCI\VEN_8086&DEV_191E&SUBSYS_223517AA PCI\VEN_8086&DEV_191E&SUBSYS_223717AA PCI\VEN_8086&DEV_191E&SUBSYS_223817AA PCI\VEN_8086&DEV_1921&SUBSYS_223117AA PCI\VEN_8086&DEV_1921&SUBSYS_223317AA PCI\VEN_8086&DEV_1921&SUBSYS_223517AA PCI\VEN_8086&DEV_1921&SUBSYS_223717AA PCI\VEN_8086&DEV_1921&SUBSYS_223817AA PCI\VEN_8086&DEV_1926&SUBSYS_223117AA PCI\VEN_8086&DEV_1926&SUBSYS_223317AA PCI\VEN_8086&DEV_1926&SUBSYS_223517AA PCI\VEN_8086&DEV_1926&SUBSYS_223717AA PCI\VEN_8086&DEV_1926&SUBSYS_223817AA PCI\VEN_8086&DEV_1923&SUBSYS_223117AA PCI\VEN_8086&DEV_1923&SUBSYS_223317AA PCI\VEN_8086&DEV_1923&SUBSYS_223517AA PCI\VEN_8086&DEV_1923&SUBSYS_223717AA PCI\VEN_8086&DEV_1923&SUBSYS_223817AA PCI\VEN_8086&DEV_1927&SUBSYS_223117AA PCI\VEN_8086&DEV_1927&SUBSYS_223317AA PCI\VEN_8086&DEV_1927&SUBSYS_223517AA PCI\VEN_8086&DEV_1927&SUBSYS_223717AA PCI\VEN_8086&DEV_1927&SUBSYS_223817AA
+         -Date(NE), 2017-01-18
+         -Version(NE), 21.20.16.4590^
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
+
+-n1cd531w
+   -Dependencies(True), 
+      -And(True), 
+         -_OS(True), 
+            -OS(True), WIN7-ENT.*
+            -OS(False), WIN7-HOMEBASIC.*
+            -OS(False), WIN7-HOMEPREM.*
+            -OS(False), WIN7-PRO.*
+            -OS(False), WIN7-STARTER.*
+            -OS(False), WIN7-ULT.*
+         -_CPUAddressWidth(True), 
+            -AddressWidth(True), 32
+         -_Bios(True), 
+            -Level(True), *
+            -Level(False), N1GET*
+            -Level(False), N1CET*
+            -Level(False), N1KET*
+            -Level(True), N1FET*
+         -Or(True), 
+            -_PnPID(False), PCI\VEN_8086&DEV_1906&SUBSYS_223117AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1906&SUBSYS_223317AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1916&SUBSYS_223117AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1916&SUBSYS_223317AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1916&SUBSYS_223517AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1916&SUBSYS_223717AA
+            -_PnPID(True), PCI\VEN_8086&DEV_1916&SUBSYS_223817AA
+            -_PnPID(False), PCI\VEN_8086&DEV_190E&SUBSYS_223117AA
+            -_PnPID(False), PCI\VEN_8086&DEV_190E&SUBSYS_223317AA
+            -_PnPID(False), PCI\VEN_8086&DEV_190E&SUBSYS_223517AA
+            -_PnPID(False), PCI\VEN_8086&DEV_190E&SUBSYS_223717AA
+            -_PnPID(False), PCI\VEN_8086&DEV_190E&SUBSYS_223817AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1906&SUBSYS_223517AA
+            -_PnPID(False), PCI\VEN_8086&DEV_191E&SUBSYS_223117AA
+            -_PnPID(False), PCI\VEN_8086&DEV_191E&SUBSYS_223317AA
+            -_PnPID(False), PCI\VEN_8086&DEV_191E&SUBSYS_223517AA
+            -_PnPID(False), PCI\VEN_8086&DEV_191E&SUBSYS_223717AA
+            -_PnPID(False), PCI\VEN_8086&DEV_191E&SUBSYS_223817AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1921&SUBSYS_223117AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1921&SUBSYS_223317AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1921&SUBSYS_223517AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1921&SUBSYS_223717AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1921&SUBSYS_223817AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1906&SUBSYS_223717AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1926&SUBSYS_223117AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1926&SUBSYS_223317AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1926&SUBSYS_223517AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1926&SUBSYS_223717AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1926&SUBSYS_223817AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1923&SUBSYS_223117AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1923&SUBSYS_223317AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1923&SUBSYS_223517AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1923&SUBSYS_223717AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1923&SUBSYS_223817AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1906&SUBSYS_223817AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1927&SUBSYS_223117AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1927&SUBSYS_223317AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1927&SUBSYS_223517AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1927&SUBSYS_223717AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1927&SUBSYS_223817AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1913&SUBSYS_223117AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1913&SUBSYS_223317AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1913&SUBSYS_223517AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1913&SUBSYS_223717AA
+            -_PnPID(False), PCI\VEN_8086&DEV_1913&SUBSYS_223817AA
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
+
+-n1cd531w
+   -SeverityOverride(True), 
+      -Not(True), 
+         -_Driver(False), 
+            -HardwareID(NE), PCI\VEN_8086&DEV_1906&SUBSYS_223117AA PCI\VEN_8086&DEV_1906&SUBSYS_223317AA PCI\VEN_8086&DEV_1906&SUBSYS_223517AA PCI\VEN_8086&DEV_1906&SUBSYS_223717AA PCI\VEN_8086&DEV_1906&SUBSYS_223817AA PCI\VEN_8086&DEV_1913&SUBSYS_223117AA PCI\VEN_8086&DEV_1913&SUBSYS_223317AA PCI\VEN_8086&DEV_1913&SUBSYS_223517AA PCI\VEN_8086&DEV_1913&SUBSYS_223717AA PCI\VEN_8086&DEV_1913&SUBSYS_223817AA PCI\VEN_8086&DEV_1916&SUBSYS_223117AA PCI\VEN_8086&DEV_1916&SUBSYS_223317AA PCI\VEN_8086&DEV_1916&SUBSYS_223517AA PCI\VEN_8086&DEV_1916&SUBSYS_223717AA PCI\VEN_8086&DEV_1916&SUBSYS_223817AA PCI\VEN_8086&DEV_190E&SUBSYS_223117AA PCI\VEN_8086&DEV_190E&SUBSYS_223317AA PCI\VEN_8086&DEV_190E&SUBSYS_223517AA PCI\VEN_8086&DEV_190E&SUBSYS_223717AA PCI\VEN_8086&DEV_190E&SUBSYS_223817AA PCI\VEN_8086&DEV_191E&SUBSYS_223117AA PCI\VEN_8086&DEV_191E&SUBSYS_223317AA PCI\VEN_8086&DEV_191E&SUBSYS_223517AA PCI\VEN_8086&DEV_191E&SUBSYS_223717AA PCI\VEN_8086&DEV_191E&SUBSYS_223817AA PCI\VEN_8086&DEV_1921&SUBSYS_223117AA PCI\VEN_8086&DEV_1921&SUBSYS_223317AA PCI\VEN_8086&DEV_1921&SUBSYS_223517AA PCI\VEN_8086&DEV_1921&SUBSYS_223717AA PCI\VEN_8086&DEV_1921&SUBSYS_223817AA PCI\VEN_8086&DEV_1926&SUBSYS_223117AA PCI\VEN_8086&DEV_1926&SUBSYS_223317AA PCI\VEN_8086&DEV_1926&SUBSYS_223517AA PCI\VEN_8086&DEV_1926&SUBSYS_223717AA PCI\VEN_8086&DEV_1926&SUBSYS_223817AA PCI\VEN_8086&DEV_1923&SUBSYS_223117AA PCI\VEN_8086&DEV_1923&SUBSYS_223317AA PCI\VEN_8086&DEV_1923&SUBSYS_223517AA PCI\VEN_8086&DEV_1923&SUBSYS_223717AA PCI\VEN_8086&DEV_1923&SUBSYS_223817AA PCI\VEN_8086&DEV_1927&SUBSYS_223117AA PCI\VEN_8086&DEV_1927&SUBSYS_223317AA PCI\VEN_8086&DEV_1927&SUBSYS_223517AA PCI\VEN_8086&DEV_1927&SUBSYS_223717AA PCI\VEN_8086&DEV_1927&SUBSYS_223817AA
+            -Version(NE), 0.01^
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
+
+-nz1w705w_32
+   -DetectInstall(False), 
+      -_Driver(True), 
+         -HardwareID(NE), PCI\VEN_8086&DEV_24F3&SUBSYS_00108086 PCI\VEN_8086&DEV_24F3&SUBSYS_10108086 PCI\VEN_8086&DEV_24F3&SUBSYS_01308086 PCI\VEN_8086&DEV_24F3&SUBSYS_01328086 PCI\VEN_8086&DEV_24F3&SUBSYS_11308086 PCI\VEN_8086&DEV_24F3&SUBSYS_11328086 PCI\VEN_8086&DEV_24F3&SUBSYS_08108086 PCI\VEN_8086&DEV_24F3&SUBSYS_09308086
+         -Date(NE), 2016-10-10
+         -Version(NE), 19.10.2.1^
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
+
+-nz1w705w_32
+   -Dependencies(True), 
+      -And(True), 
+         -_OS(True), 
+            -OS(True), WIN7-ENT.*
+            -OS(False), WIN7-HOMEBASIC.*
+            -OS(False), WIN7-HOMEPREM.*
+            -OS(False), WIN7-PRO.*
+            -OS(False), WIN7-STARTER.*
+            -OS(False), WIN7-ULT.*
+         -Or(True), 
+            -_PnPID(False), PCI\VEN_8086&DEV_24F3&SUBSYS_00108086
+            -_PnPID(False), PCI\VEN_8086&DEV_24F3&SUBSYS_10108086
+            -_PnPID(True), PCI\VEN_8086&DEV_24F3&SUBSYS_01308086
+            -_PnPID(False), PCI\VEN_8086&DEV_24F3&SUBSYS_01328086
+            -_PnPID(False), PCI\VEN_8086&DEV_24F3&SUBSYS_11308086
+            -_PnPID(False), PCI\VEN_8086&DEV_24F3&SUBSYS_11328086
+            -_PnPID(False), PCI\VEN_8086&DEV_24F3&SUBSYS_08108086
+            -_PnPID(False), PCI\VEN_8086&DEV_24F3&SUBSYS_09308086
+         -_Bios(True), 
+            -Level(True), *
+            -Level(False), N1HET*
+            -Level(False), N1EET*
+            -Level(False), N1KET*
+            -Level(False), N1DET*
+            -Level(False), R06ET*
+            -Level(False), N1CET*
+            -Level(True), N1FET*
+            -Level(False), R02ET*
+            -Level(False), N1GET*
+         -_CPUAddressWidth(True), 
+            -AddressWidth(True), 32
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
+
+-nz1w705w_32
+   -SeverityOverride(True), 
+      -Not(True), 
+         -_Driver(False), 
+            -HardwareID(NE), PCI\VEN_8086&DEV_24F3&SUBSYS_00108086 PCI\VEN_8086&DEV_24F3&SUBSYS_10108086 PCI\VEN_8086&DEV_24F3&SUBSYS_01308086 PCI\VEN_8086&DEV_24F3&SUBSYS_01328086 PCI\VEN_8086&DEV_24F3&SUBSYS_11308086 PCI\VEN_8086&DEV_24F3&SUBSYS_11328086 PCI\VEN_8086&DEV_24F3&SUBSYS_08108086 PCI\VEN_8086&DEV_24F3&SUBSYS_09308086
+            -Version(NE), 0.1^
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
+
+-n1fca09w_sun
+   -DetectInstall(True), 
+      -Or(True), 
+         -_RegistryKeyValue(False), 
+            -Key(NE), HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Sunplus SPUVCb
+            -KeyName(NE), DisplayVersion
+            -Version(NE), 3.5.7.33^
+         -_RegistryKeyValue(True), 
+            -Key(NE), HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Sunplus SPUVCb
+            -KeyName(NE), DisplayVersion
+            -Version(NE), 3.5.7.33^
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
+
+-n1fha03w_7
+   -DetectInstall(True), 
+      -_RegistryKeyValue(True), 
+         -Key(NE), HKEY_LOCAL_MACHINE\SOFTWARE\Intel\Infinst
+         -KeyName(NE), Version
+         -Version(NE), 10.1.1.9^
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
+
+-n1fca09w_rtk
+   -DetectInstall(False), 
+      -_FileVersion(False), 
+         -File(NE), %WINDOWS%\system32\drivers\rtsuvc.sys
+         -Version(NE), 10.0.10586.11196^
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
+
+-n1fca09w_rtk
+   -Dependencies(False), 
+      -And(False), 
+         -Or(True), 
+            -_OS(True), 
+               -OS(True), WIN7-ENT.*
+               -OS(False), WIN7-HOMEBASIC.*
+               -OS(False), WIN7-HOMEPREM.*
+               -OS(False), WIN7-PRO.*
+               -OS(False), WIN7-STARTER.*
+               -OS(False), WIN7-ULT.*
+            -And(False), 
+               -_OS(False), 
+                  -OS(False), WIN81
+                  -OS(False), WIN81-ENT
+                  -OS(False), WIN81-PRO
+               -_CPUAddressWidth(False), 
+                  -AddressWidth(False), 64
+         -Or(False), 
+            -_PnPID(False), USB\VID_04F2&PID_B531
+            -_PnPID(False), USB\VID_13D3&PID_5248
+            -_PnPID(False), USB\VID_04F2&PID_B52C
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
+
+-n1mku54w_win7
+   -DetectInstall(True), 
+      -_Driver(True), 
+         -HardwareID(NE), ACPI\VEN_IBM&DEV_0055
+         -HardwareID(NE), ACPI\VEN_IBM&DEV_0068
+         -Date(NE), 2016-10-28
+         -Version(NE), 1.67.12.19^
+         -HardwareID(NE), ACPI\VEN_LEN&DEV_0068
+         -HardwareID(NE), ACPI\VEN_LEN&DEV_0168
+         -HardwareID(NE), ACPI\VEN_LEN&DEV_0268
+         -HardwareID(NE), ACPI\IBM0055
+         -HardwareID(NE), ACPI\IBM0068
+         -HardwareID(NE), ACPI\LEN0068
+         -HardwareID(NE), ACPI\LEN0168
+         -HardwareID(NE), ACPI\LEN0268
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
+
+-n1au410w
+   -DetectInstall(True), 
+      -Or(True), 
+         -_RegistryKeyValue(True), 
+            -Key(NE), HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{DAC01CEE-5BAE-42D5-81FC-B687E84E8405}
+            -KeyName(NE), DisplayVersion
+            -Version(NE), 6.68.10^
+         -_RegistryKeyValue(False), 
+            -Key(NE), HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{DAC01CEE-5BAE-42D5-81FC-B687E84E8405}
+            -KeyName(NE), DisplayVersion
+            -Version(NE), 6.68.10^
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-

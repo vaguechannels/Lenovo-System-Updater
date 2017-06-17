@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?pcdDescriptor version="0230"?>
+<Package name="PWRMGR_VISTA" id="n1au410w" version="6.68.10" hide="False">
+  <Title default="EN">
+    <Desc id="EN">ThinkPad Power Manager - Vista/7 [32,64]</Desc>
+    <Desc id="JP">ThinkPad 省電力マネージャー</Desc>
+    <Desc id="DA">ThinkPad-stromstyring</Desc>
+    <Desc id="FI">ThinkPadin virransyoton hallinta-apuohjelma</Desc>
+    <Desc id="FR">Gestionnaire d'alimentation ThinkPad</Desc>
+    <Desc id="DE">ThinkPad Energie-Manager</Desc>
+    <Desc id="IT">ThinkPad Power Manager</Desc>
+    <Desc id="NL">ThinkPad Power Manager</Desc>
+    <Desc id="NO">ThinkPad Stromstyrer</Desc>
+    <Desc id="ES">Gestor de energia de ThinkPad</Desc>
+    <Desc id="SV">ThinkPad Energispararen</Desc>
+    <Desc id="CHS">ThinkPad Power Manager</Desc>
+    <Desc id="CHT">ThinkPad Power Manager</Desc>
+    <Desc id="KO">ThinkPad Power Manager</Desc>
+  </Title>
+  <DetectVersion type="Registry">
+    <Registry>
+      <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{DAC01CEE-5BAE-42D5-81FC-B687E84E8405}</Key>
+      <ValueName>DisplayVersion</ValueName>
+    </Registry>
+    <Registry>
+      <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{DAC01CEE-5BAE-42D5-81FC-B687E84E8405}</Key>
+      <ValueName>DisplayVersion</ValueName>
+    </Registry>
+  </DetectVersion>
+  <Summary default="EN" />
+  <Severity type="1" />
+  <SeverityOverride type="2">
+    <Not>
+      <_RegistryKey>
+        <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{DAC01CEE-5BAE-42D5-81FC-B687E84E8405}</Key>
+        <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{DAC01CEE-5BAE-42D5-81FC-B687E84E8405}</Key>
+      </_RegistryKey>
+    </Not>
+  </SeverityOverride>
+  <Vendor>Lenovo</Vendor>
+  <ExtractCommand>n1au410w.exe /VERYSILENT /DIR=%PACKAGEPATH% /EXTRACT="YES"</ExtractCommand>
+  <ReleaseDate>2016-04-18</ReleaseDate>
+  <DiskSpaceNeeded>146874304</DiskSpaceNeeded>
+  <Reboot type="3" />
+  <Install rc="0" type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\SETUP.EXE -s -SMS</Cmdline>
+  </Install>
+  <ManualInstall type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\SETUP.EXE</Cmdline>
+  </ManualInstall>
+  <Uninstall />
+  <DetectInstall>
+    <Or>
+      <_RegistryKeyValue type="REG_SZ">
+        <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{DAC01CEE-5BAE-42D5-81FC-B687E84E8405}</Key>
+        <KeyName>DisplayVersion</KeyName>
+        <Version>6.68.10^</Version>
+      </_RegistryKeyValue>
+      <_RegistryKeyValue type="REG_SZ">
+        <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{DAC01CEE-5BAE-42D5-81FC-B687E84E8405}</Key>
+        <KeyName>DisplayVersion</KeyName>
+        <Version>6.68.10^</Version>
+      </_RegistryKeyValue>
+    </Or>
+  </DetectInstall>
+  <Dependencies>
+    <And>
+      <_OS>
+        <OS>VS-BUS.*</OS>
+        <OS>VS-ENT.*</OS>
+        <OS>VS-HOMEBASIC.*</OS>
+        <OS>VS-HOMEPREM.*</OS>
+        <OS>VS-HOMEULT.*</OS>
+        <OS>WIN7-ENT.*</OS>
+        <OS>WIN7-HOMEBASIC.*</OS>
+        <OS>WIN7-HOMEPREM.*</OS>
+        <OS>WIN7-PRO.*</OS>
+        <OS>WIN7-STARTER.*</OS>
+        <OS>WIN7-ULT.*</OS>
+      </_OS>
+      <Or>
+        <Or>
+          <_Coreq name="HOTKEYPACK2">
+            <Version>2.03.0705^</Version>
+          </_Coreq>
+          <_RegistryKeyValue type="REG_SZ">
+            <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OnScreenDisplay</Key>
+            <KeyName>DisplayVersion</KeyName>
+            <Version>5.03^</Version>
+          </_RegistryKeyValue>
+        </Or>
+        <Or>
+          <_Coreq name="HOTKEYPACK4_G1W7_EW">
+            <Version>2.03.0705^</Version>
+          </_Coreq>
+          <_RegistryKeyValue type="REG_SZ">
+            <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OnScreenDisplay</Key>
+            <KeyName>DisplayVersion</KeyName>
+            <Version>5.03^</Version>
+          </_RegistryKeyValue>
+        </Or>
+        <Or>
+          <_Coreq name="HOTKEYPACK4_W8">
+            <Version>2.03.0705^</Version>
+          </_Coreq>
+          <_RegistryKeyValue type="REG_SZ">
+            <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OnScreenDisplay</Key>
+            <KeyName>DisplayVersion</KeyName>
+            <Version>5.03^</Version>
+          </_RegistryKeyValue>
+        </Or>
+        <Or>
+          <_Coreq name="HOTKEYPACK4_WIN7">
+            <Version>2.03.0705^</Version>
+          </_Coreq>
+          <_RegistryKeyValue type="REG_SZ">
+            <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OnScreenDisplay</Key>
+            <KeyName>DisplayVersion</KeyName>
+            <Version>5.03^</Version>
+          </_RegistryKeyValue>
+        </Or>
+      </Or>
+      <Or>
+        <Or>
+          <_Coreq name="IBMPM_VISTA">
+            <Version>1.43^</Version>
+          </_Coreq>
+          <_RegistryKeyValue type="REG_SZ">
+            <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Power Management Driver</Key>
+            <KeyName>DisplayVersion</KeyName>
+            <Version>1.43^</Version>
+          </_RegistryKeyValue>
+        </Or>
+        <Or>
+          <_RegistryKeyValue type="REG_SZ">
+            <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Power Management Driver</Key>
+            <KeyName>DisplayVersion</KeyName>
+            <Version>1.43^</Version>
+          </_RegistryKeyValue>
+          <_Coreq name="IBMPM_WIN7">
+            <Version>1.43^</Version>
+          </_Coreq>
+        </Or>
+        <Or>
+          <_RegistryKeyValue type="REG_SZ">
+            <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Power Management Driver</Key>
+            <KeyName>DisplayVersion</KeyName>
+            <Version>1.43^</Version>
+          </_RegistryKeyValue>
+          <_Coreq name="IBMPM_W8">
+            <Version>1.43^</Version>
+          </_Coreq>
+        </Or>
+        <Or>
+          <_Coreq name="PMDRIVER_GIKU">
+            <Version>1.67.00.02^</Version>
+          </_Coreq>
+          <_RegistryKeyValue type="REG_SZ">
+            <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Power Management Driver</Key>
+            <KeyName>DisplayVersion</KeyName>
+            <Version>1.67.00.02^</Version>
+          </_RegistryKeyValue>
+        </Or>
+        <Or>
+          <_RegistryKeyValue type="REG_SZ">
+            <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Power Management Driver</Key>
+            <KeyName>DisplayVersion</KeyName>
+            <Version>1.43^</Version>
+          </_RegistryKeyValue>
+          <_Coreq name="PMD_WIN7">
+            <Version>1.43^</Version>
+          </_Coreq>
+        </Or>
+        <Or>
+          <_Coreq name="PMD_VISTA">
+            <Version>1.43^</Version>
+          </_Coreq>
+          <_RegistryKeyValue type="REG_SZ">
+            <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Power Management Driver</Key>
+            <KeyName>DisplayVersion</KeyName>
+            <Version>1.43^</Version>
+          </_RegistryKeyValue>
+        </Or>
+      </Or>
+      <_Bios>
+        <Level>*</Level>
+        <Level>N15ET*</Level>
+        <Level>GFET*</Level>
+        <Level>7UET*</Level>
+        <Level>7VET*</Level>
+        <Level>6HET*</Level>
+        <Level>6IET*</Level>
+        <Level>6UET*</Level>
+        <Level>83ET*</Level>
+        <Level>8CET*</Level>
+        <Level>G1ET*</Level>
+        <Level>G7ET*</Level>
+        <Level>GHET*</Level>
+        <Level>GJET*</Level>
+        <Level>GLET*</Level>
+        <Level>6FET*</Level>
+        <Level>6MET*</Level>
+        <Level>8AET*</Level>
+        <Level>G4ET*</Level>
+        <Level>GMET*</Level>
+        <Level>6NET*</Level>
+        <Level>6LET*</Level>
+        <Level>8BET*</Level>
+        <Level>G5ET*</Level>
+        <Level>GNET*</Level>
+        <Level>7ZET*</Level>
+        <Level>6KET*</Level>
+        <Level>8MET*</Level>
+        <Level>G6ET*</Level>
+        <Level>GRET*</Level>
+        <Level>6XET*</Level>
+        <Level>8FET*</Level>
+        <Level>8RET*</Level>
+        <Level>8QET*</Level>
+        <Level>G9ET*</Level>
+        <Level>G8ET*</Level>
+        <Level>GSET*</Level>
+        <Level>6DET*</Level>
+        <Level>7XET*</Level>
+        <Level>7WET*</Level>
+        <Level>6QET*</Level>
+        <Level>8DET*</Level>
+        <Level>G2ET*</Level>
+        <Level>GCET*</Level>
+        <Level>GGET*</Level>
+        <Level>GIET*</Level>
+        <Level>7TET*</Level>
+        <Level>6EET*</Level>
+        <Level>N14ET*</Level>
+        <Level>N10ET*</Level>
+        <Level>JBET*</Level>
+        <Level>N11ET*</Level>
+        <Level>JIET*</Level>
+        <Level>JHET*</Level>
+      </_Bios>
+    </And>
+  </Dependencies>
+  <Files>
+    <Installer>
+      <File>
+        <Name>n1au410w.exe</Name>
+        <CRC>610479BEEE47A1F7F1C0E2F74AF8F7A0398231E2</CRC>
+        <Size>22156984</Size>
+      </File>
+    </Installer>
+    <Readme default="EN">
+      <File id="EN">
+        <Name>n1au410w.txt</Name>
+        <CRC>E1163F0D2891376E1D43B156FA6222D3FCDFAF9A</CRC>
+        <Size>40102</Size>
+      </File>
+    </Readme>
+  </Files>
+</Package>

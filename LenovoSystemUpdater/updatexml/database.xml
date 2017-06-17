@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Database version="301">
+  <Package id="n1fha03w_7" name="CHIPSET_N1FHA_7" description="Intel Chipset Driver - 7 [32,64]">
+    <FileName>n1fha03w_7_2_.xml</FileName>
+    <Version>10.1.1.9</Version>
+    <ReleaseDate>1/26/2016</ReleaseDate>
+    <Size>9000000</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n1fha03w_7\n1fha03w_7_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20FC" os="Windows 7" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n1fca09w_rtk" name="CAMERA_N1FCA_RTK" description="Integrated Camera Driver for Realtek - 7 [32,64]/8.1[64]">
+    <FileName>n1fca09w_rtk_2_.xml</FileName>
+    <Version>10.0.10586.11196</Version>
+    <ReleaseDate>7/11/2016</ReleaseDate>
+    <Size>60416140</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n1fca09w_rtk\n1fca09w_rtk_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20FC" os="Windows 7" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="nz1w705w_32" name="IWLAN_NZ1W7_32" description="Intel Wireless LAN Driver - 7 [32]">
+    <FileName>nz1w705w_32_2_.xml</FileName>
+    <Version>19.10.2.1</Version>
+    <ReleaseDate>12/14/2016</ReleaseDate>
+    <Size>221468957</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\nz1w705w_32\nz1w705w_32_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20FC" os="Windows 7" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n1cd531w" name="INTEL_VGA_N1CD5_TSS" description="Intel HD Graphics Driver - 7 [32]">
+    <FileName>n1cd531w_2_.xml</FileName>
+    <Version>21.20.16.4590</Version>
+    <ReleaseDate>2/10/2017</ReleaseDate>
+    <Size>451037512</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n1cd531w\n1cd531w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20FC" os="Windows 7" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n1fca09w_sun" name="CAMERA_N1FCA_SUN" description="Integrated Camera Driver for SunplusIT - 7 [32,64]/8.1[64]">
+    <FileName>n1fca09w_sun_2_.xml</FileName>
+    <Version>3.5.7.33</Version>
+    <ReleaseDate>8/8/2016</ReleaseDate>
+    <Size>60416140</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n1fca09w_sun\n1fca09w_sun_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20FC" os="Windows 7" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n1au410w" name="PWRMGR_VISTA" description="ThinkPad Power Manager - Vista/7 [32,64]">
+    <FileName>n1au410w_2_.xml</FileName>
+    <Version>6.68.10</Version>
+    <ReleaseDate>4/18/2016</ReleaseDate>
+    <Size>146874304</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>Active</PreviousStatus>
+    <LocalPath>\n1au410w\n1au410w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20FC" os="Windows 7" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n1mku54w_win7" name="PMD_WIN7" description="Lenovo Power Management Driver - 7 [32,64]">
+    <FileName>n1mku54w_win7_2_.xml</FileName>
+    <Version>1.67.12.19</Version>
+    <ReleaseDate>12/27/2016</ReleaseDate>
+    <Size>1870128</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n1mku54w_win7\n1mku54w_win7_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20FC" os="Windows 7" />
+    </SystemCompatibility>
+  </Package>
+</Database>

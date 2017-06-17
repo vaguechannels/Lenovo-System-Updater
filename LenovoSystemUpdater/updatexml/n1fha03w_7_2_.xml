@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?pcdDescriptor version="0230"?>
+<Package name="CHIPSET_N1FHA_7" id="n1fha03w_7" version="10.1.1.9" hide="False">
+  <Title default="EN">
+    <Desc id="EN">Intel Chipset Driver - 7 [32,64]</Desc>
+  </Title>
+  <DetectVersion type="Registry">
+    <Registry>
+      <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Intel\Infinst</Key>
+      <ValueName>Version</ValueName>
+    </Registry>
+  </DetectVersion>
+  <Summary default="EN" />
+  <Severity type="1" />
+  <SeverityOverride type="2">
+    <Not>
+      <_RegistryKey>
+        <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Intel\Infinst</Key>
+      </_RegistryKey>
+    </Not>
+  </SeverityOverride>
+  <Vendor>Lenovo</Vendor>
+  <ExtractCommand>n1fha03w.exe /VERYSILENT /DIR=%PACKAGEPATH% /EXTRACT="YES"</ExtractCommand>
+  <ReleaseDate>2016-01-26</ReleaseDate>
+  <DiskSpaceNeeded>9000000</DiskSpaceNeeded>
+  <Reboot type="3" />
+  <Install rc="0,3010" type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\SetupChipset.exe -s -norestart</Cmdline>
+  </Install>
+  <ManualInstall type="cmd" default="EN">
+    <Cmdline id="EN">%PACKAGEPATH%\SetupChipset.exe</Cmdline>
+  </ManualInstall>
+  <Uninstall />
+  <DetectInstall>
+    <_RegistryKeyValue type="REG_SZ">
+      <Key>HKEY_LOCAL_MACHINE\SOFTWARE\Intel\Infinst</Key>
+      <KeyName>Version</KeyName>
+      <Version>10.1.1.9^</Version>
+    </_RegistryKeyValue>
+  </DetectInstall>
+  <Dependencies>
+    <And>
+      <_OS>
+        <OS>WIN7-ENT.*</OS>
+        <OS>WIN7-HOMEBASIC.*</OS>
+        <OS>WIN7-HOMEPREM.*</OS>
+        <OS>WIN7-PRO.*</OS>
+        <OS>WIN7-STARTER.*</OS>
+        <OS>WIN7-ULT.*</OS>
+      </_OS>
+      <Or>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_1911]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_9D48]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_9D10]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_9D12]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_9D18]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_9D21]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_9D23]]></_PnPID>
+        <_PnPID><![CDATA[PCI\VEN_8086&DEV_9D31]]></_PnPID>
+      </Or>
+    </And>
+  </Dependencies>
+  <Files>
+    <Installer>
+      <File>
+        <Name>n1fha03w.exe</Name>
+        <CRC>28755A68B243A6EC8DA2103AC855EC6AF0D1B1FD</CRC>
+        <Size>3076792</Size>
+      </File>
+    </Installer>
+    <Readme default="EN">
+      <File id="EN">
+        <Name>n1fha03w.txt</Name>
+        <CRC>4D8A151CC9560C7E731D0B8EEE24A624D22EDFFE</CRC>
+        <Size>9417</Size>
+      </File>
+    </Readme>
+  </Files>
+</Package>
