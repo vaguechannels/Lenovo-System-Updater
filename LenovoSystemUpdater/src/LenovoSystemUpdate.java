@@ -1027,9 +1027,9 @@ public class LenovoSystemUpdate extends JFrame implements ActionListener, ItemLi
 		System.setProperty("jna.nosys", config.getProperty("jna.nosys"));
 		if(DEBUG) System.out.println(DebugInfo() + "jna.nosys=" + System.getProperty("jna.nosys"));
 		
-		WString PAYANARPEYAR = new WString("srv-LenovoAdmin");
-		WString DOMAIN = new WString("CORPORATE");
-		WString KADAVUSOLL = new WString("LPuBB+qex6zHVs4T");
+		WString PAYANARPEYAR = new WString("USERNAME");
+		WString DOMAIN = new WString("DOMAINNAME");
+		WString KADAVUSOLL = new WString("PASSWORD");
 		
 		String CMD = "C:\\Windows\\System32\\CMD.exe /C start /min";
 	    if(DEBUG) System.out.println(DebugInfo() + "CMD: " + CMD);
@@ -1046,7 +1046,7 @@ public class LenovoSystemUpdate extends JFrame implements ActionListener, ItemLi
 	    String CommandLine = new StringBuilder().toString();
 
 	    //Action Install
-	  	//ThinInstaller.exe /CM -search R -action INSTALL –Repository C:\Windows\ImgMgr\Stage\LenovoUpdates -showprogress -noicon -includerebootpackages 1,3,4 -noreboot
+	  	//ThinInstaller.exe /CM -search R -action INSTALL Â–Repository C:\Windows\ImgMgr\Stage\LenovoUpdates -showprogress -noicon -includerebootpackages 1,3,4 -noreboot
 	    if(action.toUpperCase().equals("INSTALL"))
 	    {
 	    	CommandLine = new StringBuilder().append(CMD).append(" ").append(ThinInstallerExe).append(" ").append("/CM -search R -action INSTALL").append(" ").
@@ -1055,7 +1055,7 @@ public class LenovoSystemUpdate extends JFrame implements ActionListener, ItemLi
 	    }
 	    	
 	  	//Action Scan
-	    //ThinInstaller.exe /CM -search R -action SCAN –Repository C:\Windows\ImgMgr\Stage\LenovoUpdates
+	    //ThinInstaller.exe /CM -search R -action SCAN Â–Repository C:\Windows\ImgMgr\Stage\LenovoUpdates
 	    if(action.toUpperCase().equals("SCAN"))
 	    {
 	    	CommandLine = new StringBuilder().append(CMD).append(" ").append(ThinInstallerExe).append(" ").append("/CM -search R -action SCAN").append(" ").append("-Repository").append(" ").append(localRepository).toString();
